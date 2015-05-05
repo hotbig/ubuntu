@@ -1,0 +1,53 @@
+1. google Pinyin
+=============================================================================================================
+### after install google pinyin from market, please restart ubuntu first.
+http://sixipiaoyang.blog.163.com/blog/static/623235882014450916276/
+
+2. Adobe Flash for chrome (chrome is not the default browser in ubuntu, need install first)
+=============================================================================================================
+>sudo apt-get install pepperflashplugin-nonfree
+>sudo update-pepperflashplugin-nonfree --install
+
+3. MS Yahei for chrome
+=============================================================================================================
+http://www.linuxidc.com/Linux/2010-08/27451p2.htm
+
+4. Evernote Web Clipper for chrome 
+=============================================================================================================
+### please get the extension from Chrome extension store
+
+5. ssh server
+=============================================================================================================
+>sudo apt-get install openssh-server
+>sudo /etc/init.d/ssh stop
+>sudo /etc/init.d/ssh start
+
+6. vim
+=============================================================================================================
+### install vim first
+>sudo apt-get install vim
+### and add basic vim setting. http://www.zhihu.com/question/19989337
+
+7. git
+=============================================================================================================
+### install first
+>sudo apt-get install git
+
+### add SSH key for current user
+http://www.it165.net/admin/html/201402/2424.html
+http://blog.sina.com.cn/s/blog_6b706e15010199p1.html
+>ssh-keygen -t rsa -C "xxxxxxxx#gmail.com"
+
+### create git-repo and push to remote
+http://www.sitepoint.com/git-for-beginners/?utm_source=tuicool
+>mkdir git_test
+>cd git_test
+>git init
+>touch test.c
+>git add test.c
+>git commit -m "first commit"
+>git status
+>git remote add origin git@github.com:hotbig/trial.git (need to create triall.git at github first)
+>git push -u origin master
+
+

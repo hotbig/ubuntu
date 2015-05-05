@@ -22,6 +22,12 @@ http://www.linuxidc.com/Linux/2010-08/27451p2.htm
 >sudo /etc/init.d/ssh stop
 >sudo /etc/init.d/ssh start
 
+5.1 putty configuration
+### set UTF-8
+:putty configuration->Window->Translation->Remote character set 
+### set keep-alive
+:putty configuration->Connection->keep alives
+
 6. vim
 =============================================================================================================
 ### install vim first

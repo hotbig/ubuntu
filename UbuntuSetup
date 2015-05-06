@@ -56,4 +56,14 @@ http://www.sitepoint.com/git-for-beginners/?utm_source=tuicool
 >git remote add origin git@github.com:hotbig/trial.git (need to create triall.git at github first)
 >git push -u origin master
 
+8. Jekyll
+=============================================================================================================
+### install ruby gems
+>sudo apt-get install rubygems
+>sudo apt-get install ruby
+
+http://jekyllbootstrap.com/usage/jekyll-quick-start.html
+http://jekyllbootstrap.com/lessons/jekyll-introduction.html
+http://equation85.github.io/blog/blog-with-github-and-jekyll/
+
 

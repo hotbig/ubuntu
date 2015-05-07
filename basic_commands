@@ -1,0 +1,22 @@
+1. Linux Manual Usage
+---------------------------------------------------------------------------------------
+1.1 basic commands
+$man man
+$man -h
+$man -f time // list all "time" mannual
+$man 2 time  // show time 2
+$man -k bash // find all 
+
+1.2 man section type
+1   Executable programs or shell commands
+2   System calls (functions provided by the kernel)
+3   Library calls (functions within program libraries)
+4   Special files (usually found in /dev)
+5   File formats and conventions eg /etc/passwd
+6   Games
+7   Miscellaneous (including macro packages and conventions), e.g. man(7), groff(7)
+8   System administration commands (usually only for root)
+9   Kernel routines [Non standard]
+
+http://man7.org/linux/man-pages/
+https://www.linux.com/learn/docs/ldp/624-Man-Page

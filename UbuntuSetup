@@ -87,3 +87,48 @@ http://wiki.ubuntu.com.cn/Vsftpd
 
 ### extract
 >rar e XXX.rar
+
+11. Samba
+=============================================================================================================
+### install 
+>sudo apt-get install samba
+>sudo apt-get install cifs-utils
+>sudo apt-get install samba-common
+
+### create share folder
+>mkdir /home/yobig/Public/samba_share
+>sudo chmod 777 samba_share/
+
+### configure samba
+>sudo cp /etc/samba/smb.conf /etc/samba/smb.conf_backup
+>sudo vim /etc/samba/smb.conf 
+ ________________add it at the end__________________
+ [share]
+ path = /home/yobig/Public/samba_share
+ available = yes 
+ browseable = yes 
+ public = yes
+ writable = yes
+ ___________________________________________________
+
+### create smb user
+>sudo adduser woosha
+>sudo touch /etc/samba/smbpasswd
+>sudo smbpasswd -a woosha
+
+### restart samba
+>sudo service samba restart
+
+### access the samba from remote
+\\192.168.0.xxx
+
+### support the symbol link
+>sudo vim /etc/samba/smb.conf # restart samba again
+ _____________add it below global___________________
+ wide links = yes
+ follow symlinks = yes
+ unix extensions = no
+ ___________________________________________________
+
+### create symbol links 
+>sudo ln -s ../../Pictures/XXX XXX

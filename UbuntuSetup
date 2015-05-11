@@ -73,6 +73,10 @@ http://equation85.github.io/blog/blog-with-github-and-jekyll/
 >sudo netstat -npltu|grep 21
 >ftp localhost
 
+### confit server to be writable
+>sudo vim /etv/vsftpd.conf --> add line "write_enable=YES" into /etc/vsftpd.conf
+>sudo service vsftpd restart
+
 http://wiki.ubuntu.com.cn/Vsftpd
 
 

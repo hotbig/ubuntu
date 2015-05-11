@@ -80,3 +80,10 @@ http://equation85.github.io/blog/blog-with-github-and-jekyll/
 http://wiki.ubuntu.com.cn/Vsftpd
 
 
+10. RAR
+=============================================================================================================
+### install 
+>sudo apt-get install rar
+
+### extract
+>rar e XXX.rar

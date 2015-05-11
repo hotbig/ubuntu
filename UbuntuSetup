@@ -132,3 +132,11 @@ http://wiki.ubuntu.com.cn/Vsftpd
 
 ### create symbol links 
 >sudo ln -s ../../Pictures/XXX XXX
+
+12. nethogs
+=============================================================================================================
+### install
+>sudo apt-get install nethogs
+
+### monitor
+>sudo nethogs wlan0 # press q to quit, m to switch the mode

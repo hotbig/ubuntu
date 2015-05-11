@@ -66,4 +66,13 @@ http://jekyllbootstrap.com/usage/jekyll-quick-start.html
 http://jekyllbootstrap.com/lessons/jekyll-introduction.html
 http://equation85.github.io/blog/blog-with-github-and-jekyll/
 
+9. Ftp Server
+=============================================================================================================
+### install vsftpd
+>sudo apt-get install vsftpd
+>sudo netstat -npltu|grep 21
+>ftp localhost
+
+http://wiki.ubuntu.com.cn/Vsftpd
+
 

@@ -6,6 +6,7 @@ $man -h
 $man -f time // list all "time" mannual
 $man 2 time  // show time 2
 $man -k bash // find all 
+$man -K bash // find all text
 
 1.2 man section type
 1   Executable programs or shell commands
@@ -52,5 +53,10 @@ CTRL+W l
 CTRL+W h
 
 
+4. Git commands 
+git mv file file_rename
+git add file
+git commit -m "commit message"
+git push -u origin master
 
 

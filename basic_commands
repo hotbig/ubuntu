@@ -54,6 +54,7 @@ CTRL+W h
 
 
 4. Git commands 
+---------------------------------------------------------------------------------------
 git mv file file_rename
 git add file
 git commit -m "commit message"

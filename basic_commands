@@ -67,6 +67,7 @@ ls -l | grep ^d #ls directory only
 ls -l | grep ^- #ls files only
 
 6. Bash 
+---------------------------------------------------------------------------------------
 Ctrl-a  #Move cursor to the beginning of the line.
 Ctrl-e  #Move cursor to the end of the line.
 Ctrl-f  #Move cursor forward one character;same as the right arrow key.
@@ -82,5 +83,5 @@ Ctrl-u	#Kill text from the cursor location to the beginning of the line.
 Ctrl-p	#Move to the previous history entry. Same action as the up arrow.
 Ctrl-n	#Move to the next history entry. Same action as the down arrow.
 Ctrl-r	#Reverse incremental search. Searches incrementally from the current command line up the history list.
-Alt-p	  #Reverse search, non-incremental. 
-Alt-n	  #Forward search, non-incremental.
+Alt-p   #Reverse search, non-incremental. 
+Alt-n   #Forward search, non-incremental.

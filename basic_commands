@@ -61,3 +61,7 @@ git commit -m "commit message"
 git push -u origin master
 
 
+5. File/Dir related
+---------------------------------------------------------------------------------------
+ls -l | grep ^d #ls directory only
+ls -l | grep ^- #ls files only

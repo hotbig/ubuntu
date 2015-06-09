@@ -52,6 +52,8 @@ pgrep vim|xargs kill -9 # kill all processes opened by vim
 CTRL+W l 
 CTRL+W h
 
+# replace string
+[range]s/xxx/zzz/[g,i,c,e]
 
 4. Git commands 
 ---------------------------------------------------------------------------------------
@@ -59,6 +61,8 @@ git mv file file_rename
 git add file
 git commit -m "commit message"
 git push -u origin master
+
+git pull
 
 
 5. File/Dir related

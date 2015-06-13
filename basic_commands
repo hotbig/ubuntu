@@ -51,6 +51,17 @@ pgrep vim|xargs kill -9 # kill all processes opened by vim
 #switch windows vertical
 CTRL+W l 
 CTRL+W h
+CTRL+W i
+CTRL+W j
+
+vim -o file1 file2 # open 2 split windows for file1 file2
+vim -O file2 file2 # open 2 split windows for file1 file2
+
+split      #split current window
+split file #split current window and open file
+vsplit     #split current window vertical
+
+
 
 # replace string
 [range]s/xxx/zzz/[g,i,c,e]

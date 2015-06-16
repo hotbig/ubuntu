@@ -101,3 +101,14 @@ Ctrl-n	#Move to the next history entry. Same action as the down arrow.
 Ctrl-r	#Reverse incremental search. Searches incrementally from the current command line up the history list.
 Alt-p   #Reverse search, non-incremental. 
 Alt-n   #Forward search, non-incremental.
+
+7. Screen
+---------------------------------------------------------------------------------------
+screen        # create a new screen
+screen -ls    # list current session
+screen -r xxx # recover the session
+ctrl+a d      # detach the session
+ctrl+a k      # kill current screen
+ctrl+a w      # list all window
+http://www.ibm.com/developerworks/cn/linux/l-cn-screen/
+

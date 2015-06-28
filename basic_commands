@@ -86,6 +86,11 @@ tar -czf foo.tar.gz bar
 tar -xjf foo.tar.bz2 -C bar/
 tar -xzf foo.tar.gz -C bar
 
+rename  's/^/hello/'     *        ##比如统一在文件头部添加上 hello
+rename  's/.html$/.htm/' *        ##统一把.html扩展名修改为 .htm
+rename  's/$/.zip/'      *        ##统一在尾部追加 .zip后缀：
+rename  's/.zip$//'      *        ##统一去掉.zip后缀：
+
 6. Bash 
 ---------------------------------------------------------------------------------------
 Ctrl-a  #Move cursor to the beginning of the line.

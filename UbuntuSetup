@@ -140,3 +140,23 @@ http://wiki.ubuntu.com.cn/Vsftpd
 
 ### monitor
 >sudo nethogs wlan0 # press q to quit, m to switch the mode
+
+13. vncOnUbuntu
+=============================================================================================================
+>sudo apt-get install x11vnc
+>x11vnc -storepasswd
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter VNC password: 
+Verify password:    
+Write password to /home/charles/.vnc/passwd?  [y]/n y
+Password written to: /home/charles/.vnc/passwd
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sudo cp ~/.vnc/passwd /etc/x11vnc.pass
+sudo vim /etc/init/x11vnc.conf
+********************paste below text******************
+start on login-session-start
+script
+       x11vnc -display :0 -auth /var/run/lightdm/root/:0 -forever -bg -o /var/log/x11vnc.log -rfbauth /etc/x11vnc.pass -rfbport 5900  
+end script
+******************************************************
+x11vnc -forever -shared -rfbauth ~/.vnc/passwd  # manually reboot vnc

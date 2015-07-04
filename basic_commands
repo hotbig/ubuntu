@@ -81,6 +81,8 @@ git pull
 ls -l | grep ^d #ls directory only
 ls -l | grep ^- #ls files only
 
+rm -R -- */ #delete all sub-dir
+
 find -name '.svn' | xargs rm -rf
 grep -r "string to be searched"  /path/to/dir #find the files contains string
 

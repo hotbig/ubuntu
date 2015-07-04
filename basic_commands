@@ -61,6 +61,8 @@ split      #split current window
 split file #split current window and open file
 vsplit     #split current window vertical
 
+:set fileformat=unix #replace all ^m
+
 
 
 # replace string

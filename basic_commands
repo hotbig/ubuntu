@@ -80,7 +80,10 @@ git pull
 ---------------------------------------------------------------------------------------
 ls -l | grep ^d #ls directory only
 ls -l | grep ^- #ls files only
+
 find -name '.svn' | xargs rm -rf
+grep -r "string to be searched"  /path/to/dir #find the files contains string
+
 tar -cjf foo.tar.bz2 bar  (v, verbose)
 tar -czf foo.tar.gz bar
 tar -xjf foo.tar.bz2 -C bar/

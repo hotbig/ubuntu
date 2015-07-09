@@ -86,6 +86,7 @@ ls -l | grep ^- #ls files only
 rm -R -- */ #delete all sub-dir
 
 find -name '.svn' | xargs rm -rf
+find . -name "*.lib"|xargs -i cp {} ./libs/
 grep -r "string to be searched"  /path/to/dir #find the files contains string
 
 tar -cjf foo.tar.bz2 bar  (v, verbose)

@@ -101,6 +101,9 @@ rename  's/.zip$//'      *        ##统一去掉.zip后缀：
 
 scp root@10.0.0.1:/path/to/file.txt localfile.txt #ssh cp
 
+for each in $(ls) ; do du -hs "$each" ; done ## subfolder size
+du -sh .                                     ## subfolder size
+
 6. Bash 
 ---------------------------------------------------------------------------------------
 Ctrl-a  #Move cursor to the beginning of the line.

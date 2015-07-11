@@ -1,6 +1,16 @@
+# Setup ON windows with VB
+========================================================================================================
 1. Network configuration
 - 设置网卡为桥接网卡
 - ubuntu里面手动设置ip, mask, dns, gate
 
-2. QEMU+KVM
+========================================================================================================
+1. Install QEMU+KVM on Ubuntu
+# Installation ON ubunut
 http://sharadchhetri.com/2014/10/09/install-kvm-kernel-based-virtual-machine-ubuntu-14-04-lts-desktop/
+
+virsh list --all                  # list all VM
+virsh start ubuntu-desktop        # start VM
+virsh shutdown ubuntu-desktop     # shutdown VM
+
+cat /var/lib/libvirt/dnsmasq/default.leases # Get ip of guest OS

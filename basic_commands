@@ -99,6 +99,8 @@ rename  's/.html$/.htm/' *        ##统一把.html扩展名修改为 .htm
 rename  's/$/.zip/'      *        ##统一在尾部追加 .zip后缀：
 rename  's/.zip$//'      *        ##统一去掉.zip后缀：
 
+scp root@10.0.0.1:/path/to/file.txt localfile.txt #ssh cp
+
 6. Bash 
 ---------------------------------------------------------------------------------------
 Ctrl-a  #Move cursor to the beginning of the line.

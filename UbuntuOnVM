@@ -1,3 +1,6 @@
 1. Network configuration
 - 设置网卡为桥接网卡
 - ubuntu里面手动设置ip, mask, dns, gate
+
+2. QEMU+KVM
+http://sharadchhetri.com/2014/10/09/install-kvm-kernel-based-virtual-machine-ubuntu-14-04-lts-desktop/

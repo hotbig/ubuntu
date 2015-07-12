@@ -15,3 +15,7 @@ virsh shutdown ubuntu-desktop     # shutdown VM
 
 cat /var/lib/libvirt/dnsmasq/default.leases # Get ip of guest OS
 sudo qumu-img info /var/lib/libvirt/images/14_10_a.img  # get image created by virt-manager
+
+
+2. Create Qemu Image
+sudo qemu-img create -f qcow2 -o backing_file=1410_a.img 1410_b.img

@@ -6,6 +6,7 @@
 
 ========================================================================================================
 1. Install QEMU+KVM on Ubuntu
+----------------------------------------
 # Installation ON ubunut
 http://sharadchhetri.com/2014/10/09/install-kvm-kernel-based-virtual-machine-ubuntu-14-04-lts-desktop/
 
@@ -18,4 +19,6 @@ sudo qumu-img info /var/lib/libvirt/images/14_10_a.img  # get image created by v
 
 
 2. Create Qemu Image
+----------------------------------------
 sudo qemu-img create -f qcow2 -o backing_file=1410_a.img 1410_b.img
+## https://en.wikibooks.org/wiki/QEMU/Images

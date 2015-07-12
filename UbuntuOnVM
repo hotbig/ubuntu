@@ -14,3 +14,4 @@ virsh start ubuntu-desktop        # start VM
 virsh shutdown ubuntu-desktop     # shutdown VM
 
 cat /var/lib/libvirt/dnsmasq/default.leases # Get ip of guest OS
+sudo qumu-img info /var/lib/libvirt/images/14_10_a.img  # get image created by virt-manager

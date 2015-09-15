@@ -46,6 +46,9 @@ $trap -l # list all signal's name and number
 
 pgrep vim|xargs kill -9 # kill all processes opened by vim
 
+2.3 threads
+ps -eL -o user,pid,psr,comm,args |more ## check the core number for all threads.
+
 3. Basic VIM commands
 ---------------------------------------------------------------------------------------
 #switch windows vertical

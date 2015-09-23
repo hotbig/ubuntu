@@ -48,6 +48,7 @@ pgrep vim|xargs kill -9 # kill all processes opened by vim
 
 2.3 threads
 ps -eL -o user,pid,psr,comm,args |more ## check the core number for all threads. (PSR!!)
+ps -T -l [pid] ### ls thread's priority
 
 3. Basic VIM commands
 ---------------------------------------------------------------------------------------
@@ -144,3 +145,4 @@ unset ENV_VARIABLE # remove an ENV variable
 9. Kernel Config
 ---------------------------------------------------------------------------------------
 cat /boot/config-`uname -r` | grep HIGH_RES_TIMERS
+

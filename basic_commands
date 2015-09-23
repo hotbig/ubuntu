@@ -141,3 +141,6 @@ http://www.ibm.com/developerworks/cn/linux/l-cn-screen/
 ---------------------------------------------------------------------------------------
 unset ENV_VARIABLE # remove an ENV variable
 
+9. Kernel Config
+---------------------------------------------------------------------------------------
+cat /boot/config-`uname -r` | grep HIGH_RES_TIMERS

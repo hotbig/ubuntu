@@ -160,3 +160,16 @@ script
 end script
 ******************************************************
 x11vnc -forever -shared -rfbauth ~/.vnc/passwd  # manually reboot vnc
+
+14. pandoc wkhtmltopdf
+=============================================================================================================
+>sudo apt-get install wkhtmltopdf
+>xvfb-run wkhtmltopdf ./index.html b.pdf
+
+>pandoc 
+sudo apt-get install pandoc
+
+>https://github.com/chmduquesne/resume
+git clone https://github.com/chmduquesne/resume
+pandoc --standalone -c style.css --from markdown --to html -o index.html index.md
+

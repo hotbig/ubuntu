@@ -173,3 +173,8 @@ sudo apt-get install pandoc
 git clone https://github.com/chmduquesne/resume
 pandoc --standalone -c style.css --from markdown --to html -o index.html index.md
 
+15. vsftp
+=============================================================================================================
+follow all: https://help.ubuntu.com/community/vsftpd
+add line into /etc/vsftpd.conf: 
+allow_writeable_chroot=YES

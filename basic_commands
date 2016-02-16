@@ -146,3 +146,8 @@ unset ENV_VARIABLE # remove an ENV variable
 ---------------------------------------------------------------------------------------
 cat /boot/config-`uname -r` | grep HIGH_RES_TIMERS
 
+
+10. Mount
+---------------------------------------------------------------------------------------
+sudo mount //10.140.163.156/share /mnt/156 -o user=b20yang
+

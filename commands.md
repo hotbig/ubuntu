@@ -1,6 +1,7 @@
 ## Files
-
-
+find -name '.svn' | xargs rm -rf
+find . -name "*.lib"|xargs -i cp {} ./libs/
+grep -r "string to be searched"  /path/to/dir #find the files contains string
 
 ## Performance
 time dd if=/dev/zero of=./test.dbf bs=10k count=300

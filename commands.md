@@ -1,29 +1,29 @@
 ## Processes
-  2.1 Get PID of service
-  $pidof httpd
-  $pidof chrome
+  2.1 Get PID of service  
+  $pidof httpd  
+  $pidof chrome  
   
-  ps -aux|grep httpd
-  ps -aux|grep chrome
+  ps -aux|grep httpd  
+  ps -aux|grep chrome  
   
-  pgrep vim
-  pgrep httd
+  pgrep vim  
+  pgrep httd  
   
-  2.2 Kill Processes
-  $kill [SIGNAL] PID
-  $kill -9 PID  # 9 =SIGKILL, same with "kill -SIGKILL PID"
-  $kill -15 PID # 15=SIGTERM, same with "kill -SIGTERM PID"
+  2.2 Kill Processes  
+  $kill [SIGNAL] PID  
+  $kill -9 PID  # 9 =SIGKILL, same with "kill -SIGKILL PID"  
+  $kill -15 PID # 15=SIGTERM, same with "kill -SIGTERM PID"  
   
-  $pkill httpd  # kill process by process name
-  $killall -9 httpd # kill process by process name
+  $pkill httpd  # kill process by process name  
+  $killall -9 httpd # kill process by process name  
   
-  $trap -l # list all signal's name and number
+  $trap -l # list all signal's name and number  
   
-  pgrep vim|xargs kill -9 # kill all processes opened by vim
+  pgrep vim|xargs kill -9 # kill all processes opened by vim  
   
-  2.3 threads
-  ps -eL -o user,pid,psr,comm,args |more ## check the core number for all threads. (PSR!!)
-  ps -T -l [pid] ### ls thread's priority
+  2.3 threads  
+  ps -eL -o user,pid,psr,comm,args |more ## check the core number for all threads. (PSR!!)  
+  ps -T -l [pid] ### ls thread's priority  
 
 ## Files
   find -name '.svn' | xargs rm -rf   

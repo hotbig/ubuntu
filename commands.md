@@ -1,5 +1,5 @@
 ## Processes
-  **Get PID of service**
+  **Get PID of service**  
   $pidof httpd  
   $pidof chrome  
   
@@ -9,7 +9,7 @@
   pgrep vim  
   pgrep httd  
   
-  **Kill Processes  **
+  **Kill Processes**  
   $kill [SIGNAL] PID  
   $kill -9 PID  # 9 =SIGKILL, same with "kill -SIGKILL PID"  
   $kill -15 PID # 15=SIGTERM, same with "kill -SIGTERM PID"  
@@ -21,7 +21,7 @@
   
   pgrep vim|xargs kill -9 # kill all processes opened by vim  
   
-  **threads  **
+  **threads**  
   ps -eL -o user,pid,psr,comm,args |more ## check the core number for all threads. (PSR!!)  
   ps -T -l [pid] ### ls thread's priority  
 

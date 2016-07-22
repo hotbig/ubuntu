@@ -37,8 +37,8 @@
 ## Networks
   sudo sshfs -o allow_other -o kernel_cache -o auto_cache -o reconnect -o compression=no -o cache_timeout=600 -o ServerAliveInterval=15 usrename@xxx.xxx.xxx:/dir/dir /dir/dir
   
-##### list opened ported on linux  
-  netstat -lntu 
+
+  netstat -lntu ##list opened ported on linux  
 
 ## Utils
   cloc .  

@@ -24,6 +24,7 @@
   **threads**  
   ps -eL -o user,pid,psr,comm,args |more ## check the core number for all threads. (PSR!!)  
   ps -T -l [pid] ### ls thread's priority  
+  ps -m -l [pid] ### ls thread's priority
 
 ## Files
   find -name '.svn' | xargs rm -rf   
